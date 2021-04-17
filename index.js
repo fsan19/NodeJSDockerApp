@@ -2,12 +2,12 @@
 var express = require('express');
 
 // Constants
-var PORT = 2000;
+var PORT = 8080;
 
 // App
 var app = express();
 app.get('/', function (req, res){
-  res.send('Hello world, Node.js app not running on Docker (yet!!!)');
+  res.send('Hello world, Node.js app running on Docker (Local Mode)');
 });
 
 app.listen(PORT);
